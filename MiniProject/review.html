@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+
+<!-- Header Section -->
+<header>
+    <div class="logo">
+        <h1>AdvoTech</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index1.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="find_advocate.html">CATEGORIES</a></li>
+            <li><a href="contact_us.html">CONTACT US</a></li>
+            <li><a href="review.html">REVIEWS</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+        </ul>
+    </nav>
+    
+</header>
+
+
+<!-- Hero Section -->
+<main>
+<section class="hero" style="background: url(banner5.avif);">
+<!-- <br> -->
+    <h2>Find the Best Advocates in Gorakhpur</h2>
+    <div class="search-bar">
+        <input type="text" placeholder="Specialization (e.g. Civil, Criminal)">
+        <input type="text" placeholder="Experience (e.g. 1-5 years)">
+        <button>Search</button>
+    </div>
+    <br>
+</section>
+
+    <!-- Reviews Section -->
+<section class="reviews">
+    <h2>Client Reviews</h2>
+    <div class="review-card">
+        <p class="review-text">"Ramesh Verma was incredibly professional and handled my case efficiently. Highly recommend!"</p>
+        <p class="review-author">- Anjali Gupta</p>
+    </div>
+    <div class="review-card">
+        <p class="review-text">"John Stark provided excellent advice and resolved my issue with great care."</p>
+        <p class="review-author">- Rohit Sharma</p>
+    </div>
+    <div class="review-card">
+        <p class="review-text">"Priyanshu Pandey is a knowledgeable advocate. His insights are second to none."</p>
+        <p class="review-author">- Sneha Tiwari</p>
+    </div>
+    <div class="review-form">
+        <h3>Share Your Experience</h3>
+        <form>
+            <textarea name="review" placeholder="Write your review here..." required></textarea>
+            <input type="text" name="author" placeholder="Your Name" required>
+            <!--  -->
+            <input type="hidden" name="rating" id="hidden-rating">
+        
+        <!-- Star rating system -->
+        <div class="star-rating">
+            <span class="star" data-value="5">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="1">&#9733;</span>
+        </div>
+        
+        <!-- Display user rating -->
+        <p>Your Rating: <span id="rating-value">0</span></p>
+            <!--  -->
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer>
+    <p>|Advocate Connect Gorakhpur | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    <div class="social-media">
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
